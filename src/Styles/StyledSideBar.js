@@ -26,6 +26,10 @@ export const StyledSideBar = styled.div`
     margin-right: 1.6rem;
   }
 
+  @media ${devices.mobile} {
+    width: 18rem;
+  }
+
   .side-bar-menu {
     font-family: "Source Sans Pro", sans-serif;
     padding: 10px;
@@ -50,7 +54,16 @@ export const StyledSideBar = styled.div`
     font-weight: bolder;
   }
 
-  #search {
+  #search1 {
+    padding: 0.65em;
+    border-radius: 0.3em;
+    border: none;
+    background: #f9f7ff;
+    align-items: center;
+    width: 100px;
+    color: #6d6d6d;
+  }
+  #search2 {
     padding: 0.65em;
     border-radius: 0.3em;
     border: none;

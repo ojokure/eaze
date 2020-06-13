@@ -33,7 +33,7 @@ export function SideBar({ searchPrice }) {
           <div>
             <Input
               name="min"
-              id="search"
+              id="search1"
               placeholder="Min"
               onChange={handleSearch}
               defaultValue={price.min}
@@ -43,9 +43,8 @@ export function SideBar({ searchPrice }) {
           <div>
             <Input
               name="max"
-              id="search"
+              id="search2"
               placeholder="Max"
-              // value={searchValue}
               onChange={handleSearch}
               defaultValue={price.max}
             />

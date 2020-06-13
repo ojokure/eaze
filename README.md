@@ -5,7 +5,7 @@
 Eze is a simple fullstack challenge to screen prospective developers that will come onboard the Eze Development Team.
 See the deployed product at
 
-[eazechallenge.herokuapp.com](https://eazechallenge.herokuapp.com).
+[eazechallenge.herokuapp.com](https://ezechallenge.herokuapp.com).
 
 # Sole Contributor
 
@@ -45,28 +45,6 @@ This project was bootstrapped with Create-React-App and its UI was built primari
 ## Backend
 
 For information on the backend of the app, please see [here](https://github.com/ojokure/ezebackend.git).
-
-## Directory structure
-
-src
-├───components
-│ ├───DeviceCard
-│ ├───Devices
-│ ├───Footer
-│ ├───Header
-│ ├───ImageArray
-│ ├───LoadMore
-│ ├───Sidebar
-│ ├───Spinner
-│
-│
-├───Hooks
-│ ├───UseStateFetch
-├───Img
-├───Tests
-│ ├───devices.test
-├───Utils
-├───devices
 
 ## Coding Style
 

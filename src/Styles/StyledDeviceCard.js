@@ -67,9 +67,7 @@ export const StyledDeviceCard = styled.div`
   }
 
   :hover {
-    opacity: 0.8;
-    transform: scale(1.02);
-    transition: all 0.5s ease;
+    box-shadow: 0 2px 4px #d3d3d3;
   }
 `;
 

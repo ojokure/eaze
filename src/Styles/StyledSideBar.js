@@ -17,6 +17,10 @@ export const StyledSideBar = styled.div`
   box-shadow: 0px 1px 2px #12c0cb;
   font-family: "Source Sans Pro", sans-serif;
 
+  &:hover {
+    box-shadow: 0 2px 4px #d3d3d3;
+  }
+
   @media ${devices.tablet} {
     margin-left: 1.6rem;
     margin-right: 1.6rem;

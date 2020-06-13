@@ -62,7 +62,7 @@ export const useStateFetch = () => {
       setLoading(false);
     } else {
       axios
-        .get(API_URL)
+        .get("https://eaze.herokuapp.com/sell?page=1&limit=20")
         .then((res) => {
           setDeviceState(res.data.results);
           setState({ ...res.data });
@@ -73,6 +73,7 @@ export const useStateFetch = () => {
         });
     }
   }, []);
+
   return [
     { loading, error, deviceState, state },
     loadMoreDevices,

@@ -21,6 +21,12 @@ export const StyledFooterContainer = styled.div`
 
     @media ${devices.tablet} {
       flex-direction: column;
+      padding-bottom: 0.4rem;
+    }
+
+    @media ${devices.mobile} {
+      flex-direction: column;
+      padding-bottom: 0.4rem;
     }
 
     .footer-content {
@@ -28,6 +34,10 @@ export const StyledFooterContainer = styled.div`
 
       @media ${devices.tablet} {
         padding: 0.5rem 0;
+        text-align: center;
+      }
+      @media ${devices.mobile} {
+        padding: 0.2rem 0;
         text-align: center;
       }
     }

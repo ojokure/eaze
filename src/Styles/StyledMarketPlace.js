@@ -11,6 +11,7 @@ export const StyledMarketplace = styled.div`
 
   @media ${devices.tablet} {
     margin-top: 1rem;
+    margin-bottom: 50px;
   }
 `;
 

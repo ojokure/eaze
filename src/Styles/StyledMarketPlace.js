@@ -6,7 +6,7 @@ export const StyledMarketplace = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  /* width: 100%; */
   margin-top: 5rem;
 
   @media ${devices.tablet} {

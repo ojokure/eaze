@@ -14,10 +14,13 @@ export const StyledHeader = styled.div`
 
   @media ${devices.tablet} {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
   }
   @media ${devices.mobile} {
     flex-direction: column;
+    justify-content: flex-start;
     text-align: center;
     margin-bottom: 20px;
   }
@@ -26,14 +29,21 @@ export const StyledHeader = styled.div`
     margin-top: 3px;
     @media ${devices.tablet} {
       flex-direction: column;
-      text-align: center;
-      margin-left: 130px;
+
       margin-bottom: 40px;
     }
     @media ${devices.mobile} {
       flex-direction: column;
       margin-left: 0;
       margin-bottom: 30px;
+    }
+  }
+
+  h1 {
+    @media ${devices.tablet} {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
   }
 
@@ -60,6 +70,10 @@ export const StyledHeader = styled.div`
     align-items: center;
     width: 300px;
     color: #6d6d6d;
+
+    @media ${devices.tablet} {
+      width: 80%;
+    }
   }
 `;
 

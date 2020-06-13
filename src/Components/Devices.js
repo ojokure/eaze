@@ -2,7 +2,7 @@ import React from "react";
 import DeviceCard from "./DeviceCard";
 import Sidebar from "./Sidebar";
 import device_images from "./imageArray";
-import { StyledMarketplace } from "../Styles/StyledMarketPlace";
+import { StyledMarketplace, StyledDevices } from "../Styles/StyledMarketPlace";
 
 function Devices(props) {
   const { devices, searchPriceCallback } = props;
@@ -10,7 +10,7 @@ function Devices(props) {
   return (
     <StyledMarketplace>
       <Sidebar searchPrice={searchPriceCallback} />
-      <div className="devices">
+      <StyledDevices>
         {devices &&
           devices.map((device) => (
             <DeviceCard
@@ -22,7 +22,7 @@ function Devices(props) {
               images={device_images}
             />
           ))}
-      </div>
+      </StyledDevices>
     </StyledMarketplace>
   );
 }

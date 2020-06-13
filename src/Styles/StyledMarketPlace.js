@@ -12,13 +12,13 @@ export const StyledMarketplace = styled.div`
   @media ${devices.tablet} {
     margin-top: 1rem;
   }
+`;
 
-  .devices {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    justify-content: space-between;
-    color: white;
-    margin-right: 1.5rem;
-  }
+export const StyledDevices = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+  color: white;
+  margin-right: 1.5rem;
 `;

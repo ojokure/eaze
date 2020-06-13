@@ -22,4 +22,14 @@ export const StyledDevices = styled.div`
   justify-content: space-between;
   color: white;
   margin-right: 1.5rem;
+
+  @media ${devices.tablet} {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+  }
+  /* @media ${devices.mobile} {
+    margin-top: 1rem;
+    margin-bottom: 50px;
+  } */
 `;

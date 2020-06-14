@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import devices from "../Utils/devices";
 
-import { StyledHeaderButton } from "./StyledHeader";
-
 export const StyledDeviceCard = styled.div`
   flex-direction: column;
   justify-content: center;
@@ -20,7 +18,7 @@ export const StyledDeviceCard = styled.div`
 
   @media ${devices.mobile} {
     margin-left: 35px;
-    width: 12rem;
+    width: 11rem;
   }
 
   .condition {
@@ -72,9 +70,15 @@ export const StyledDeviceCard = styled.div`
   }
 `;
 
-export const StyledButton = styled(StyledHeaderButton)`
+export const StyledButton = styled.button`
   padding: 0.6em;
   width: 90px;
   font-family: "Crimson Text", serif;
   font-size: 0.85rem;
+  border-radius: 0.3em;
+  margin-left: 10px;
+  border: none;
+  background: #007ee5;
+  color: white;
+  align-items: center;
 `;

@@ -15,7 +15,6 @@ export const StyledMarketplace = styled.div`
 
   @media ${devices.mobile} {
     justify-content: center;
-    /* flex-direction: column; */
   }
 `;
 
@@ -34,7 +33,6 @@ export const StyledDevices = styled.div`
   }
   @media ${devices.mobile} {
     flex-direction: row;
-    /* margin-top: 1rem;
-    margin-bottom: 50px; */
+  
   }
 `;

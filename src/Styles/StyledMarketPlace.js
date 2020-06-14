@@ -6,12 +6,16 @@ export const StyledMarketplace = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  /* width: 100%; */
   margin-top: 5rem;
 
   @media ${devices.tablet} {
     margin-top: 1rem;
     margin-bottom: 50px;
+  }
+
+  @media ${devices.mobile} {
+    justify-content: center;
+    /* flex-direction: column; */
   }
 `;
 

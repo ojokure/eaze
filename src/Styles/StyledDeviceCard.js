@@ -20,6 +20,7 @@ export const StyledDeviceCard = styled.div`
 
   @media ${devices.mobile} {
     margin-left: 35px;
+    width: 6rem;
   }
 
   .condition {

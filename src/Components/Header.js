@@ -3,7 +3,7 @@ import appleprdcts2 from "../Img/appleprdcts2.png";
 import { Input } from "antd";
 import { StyledHeader, StyledHeaderButton } from "../Styles/StyledHeader";
 
-function Header({ searchDevicesCallback }) {
+function Header({ searchDevicesCallback, setDeviceState }) {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearch = (event) => {

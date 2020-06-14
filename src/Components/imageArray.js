@@ -15,7 +15,7 @@ import eleven from "../Img/11.png";
 import se from "../Img/se.png";
 import x from "../Img/X.png";
 import xr from "../Img/xr.png";
-import xsmas from "../Img/xs_max.png";
+import xsmax from "../Img/xs_max.png";
 import xs from "../Img/xs.png";
 
 export default [
@@ -34,7 +34,7 @@ export default [
   x,
   xr,
   xs,
-  xsmas,
+  xsmax,
   eleven,
   elevenpro,
   elevenpromax,

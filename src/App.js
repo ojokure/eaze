@@ -20,6 +20,7 @@ function App() {
     loadMoreDevices,
     searchDevices,
     searchByPrice,
+    setDeviceState,
   ] = useStateFetch();
 
   const loadMore = () => {
@@ -56,7 +57,10 @@ function App() {
 
   return (
     <div className="App">
-      <Header searchDevicesCallback={searchDevices} />
+      <Header
+        searchDevicesCallback={searchDevices}
+        setDeviceState={setDeviceState}
+      />
       <Devices devices={deviceState} searchPriceCallback={searchByPrice} />
 
       {next.currentPage < next.totalPages && !loading && (

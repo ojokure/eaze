@@ -86,4 +86,7 @@ export const StyledHeaderButton = styled.button`
   color: white;
   align-items: center;
   width: 80px;
+  @media ${devices.tablet} {
+    display: none;
+  }
 `;

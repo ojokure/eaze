@@ -33,25 +33,23 @@ export const useStateFetch = () => {
 
   // Search for devices from the header
   const searchDevices = (searchTerm) => {
-    if (searchTerm) {
-      setDeviceState((prev) =>
-        prev.filter(
-          (devices) =>
-            (devices.name &&
-              devices.name
-                .toLowerCase()
-                .includes(searchTerm && searchTerm.toLowerCase())) ||
-            (devices.condition &&
-              devices.condition
-                .toLowerCase()
-                .includes(searchTerm && searchTerm.toLowerCase())) ||
-            (devices.storage &&
-              devices.storage
-                .toLowerCase()
-                .includes(searchTerm && searchTerm.toLowerCase()))
-        )
-      );
-    }
+    setDeviceState((prev) =>
+      prev.filter(
+        (devices) =>
+          (devices.name &&
+            devices.name
+              .toLowerCase()
+              .includes(searchTerm && searchTerm.toLowerCase())) ||
+          (devices.condition &&
+            devices.condition
+              .toLowerCase()
+              .includes(searchTerm && searchTerm.toLowerCase())) ||
+          (devices.storage &&
+            devices.storage
+              .toLowerCase()
+              .includes(searchTerm && searchTerm.toLowerCase()))
+      )
+    );
   };
 
   // Fetch initially on mount
@@ -73,10 +71,25 @@ export const useStateFetch = () => {
     }
   }, []);
 
+  // useEffect(() => {
+  //   axios
+  //   .get("https://eaze.herokuapp.com/sell?page=1&limit=20")
+  //   .then((res) => {
+  //     setDeviceState(res.data.results);
+  //     setState({ ...res.data });
+  //     setLoading(false);
+  //   })
+  //   .catch((error) => {
+  //     setError(true);
+  //   });
+
+  // }, [searchValue])
+
   return [
     { loading, error, deviceState, state },
     loadMoreDevices,
     searchDevices,
     searchByPrice,
+    setDeviceState,
   ];
 };

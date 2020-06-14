@@ -71,20 +71,6 @@ export const useStateFetch = () => {
     }
   }, []);
 
-  // useEffect(() => {
-  //   axios
-  //   .get("https://eaze.herokuapp.com/sell?page=1&limit=20")
-  //   .then((res) => {
-  //     setDeviceState(res.data.results);
-  //     setState({ ...res.data });
-  //     setLoading(false);
-  //   })
-  //   .catch((error) => {
-  //     setError(true);
-  //   });
-
-  // }, [searchValue])
-
   return [
     { loading, error, deviceState, state },
     loadMoreDevices,

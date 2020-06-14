@@ -27,10 +27,10 @@ export const StyledSideBar = styled.div`
   }
 
   @media ${devices.mobile} {
-    /* display: none; */
-    width: 13rem;
+    display: none;
+    /* width: 13rem;
     margin-right: 0;
-    padding-right: 0;
+    padding-right: 0; */
   }
 
   .side-bar-menu {

@@ -32,8 +32,9 @@ export const StyledDevices = styled.div`
     align-items: flex-start;
     text-align: center;
   }
-  /* @media ${devices.mobile} {
-    margin-top: 1rem;
-    margin-bottom: 50px;
-  } */
+  @media ${devices.mobile} {
+    flex-direction: row;
+    /* margin-top: 1rem;
+    margin-bottom: 50px; */
+  }
 `;
